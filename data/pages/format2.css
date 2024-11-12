@@ -1,0 +1,106 @@
+:root {
+    --rosewater: #87CEEB; /* Light blue */
+    --flamingo: #ADD8E6; /* Soft light blue */
+    --pink: #C9E4CA; /* Pastel light blue */
+    --mauve: #B2E6CE; /* Soft mauve-blue */
+    --red: #FFC080; /* Soft orange-red */
+    --maroon: #FFA07A; /* Soft maroon */
+    --peach: #FFD7BE; /* Soft peach */
+    --yellow: #F7DC6F; /* Soft yellow */
+    --green: #C6E2B5; /* Soft green */
+    --teal: #B2FFFC; /* Soft teal */
+    --sky: #87CEEB; /* Light blue */
+    --sapphire: #6495ED; /* Soft sapphire blue */
+    --blue: #4682B4; /* Soft blue */
+    --lavender: #C7B8EA; /* Soft lavender */
+    --text: #333; /* Dark gray for contrast */
+    --subtext1: #555; /* Medium gray */
+    --subtext0: #777; /* Light gray */
+    --overlay2: #AAAAAA; /* Light gray overlay */
+    --overlay1: #888888; /* Medium gray overlay */
+    --overlay0: #666666; /* Dark gray overlay */
+    --surface2: #87CEEB; /* Light blue surface */
+    --surface1: #ADD8E6; /* Soft light blue surface */
+    --surface0: #B2E6CE; /* Soft mauve-blue surface */
+    --base: #F7F7F7; /* Light base color */
+    --mantle: #E7E7E7; /* Light mantle color */
+    --crust: #87CEEB; /* Light crust color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    justify-content: center;
+    height:100vh;
+    text-align: right;
+}
+body {
+    
+    max-width: 100vw;
+    background-color: var(--base);
+    font-family: sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    background: url(pexels-photo-417074.jpeg)no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-weight: lighter;
+    color: white;
+
+}
+
+.form-container {
+    font-size: 1.5rem;
+    color: var(--text);
+    background-color: transparent;
+    padding: 3rem;
+    margin: 6rem;
+    border-radius: 0.5rem;
+}
+
+.input-pair {
+    margin: 20px 0;
+}
+
+.input-pair input, .input-pair label {
+    margin: 10px 0;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"],
+.form-container textarea,
+.form-container button {
+    box-sizing: border-box;
+    background-color: var(--blue);
+    color: var(--text);
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--text);
+    border-radius: 4px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="number"]:focus,
+.form-container textarea:focus {
+    border-color: var(--blue);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.form-container button {
+    background: linear-gradient(120deg, var(--teal), var(--green));
+    color: var(--base);
+    font-weight: bold;
+    cursor: pointer;
+}
